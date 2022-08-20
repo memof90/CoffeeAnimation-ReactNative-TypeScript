@@ -1,6 +1,6 @@
 export default {
     fonts: {
-        regular: 'Nutito-Regular',
-        bold: 'Nutito-Bold',
+        regular: 'Nunito_400Regular',
+        bold: 'Nunito_700Bold',
     }
 }
