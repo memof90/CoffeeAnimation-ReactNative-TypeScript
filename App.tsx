@@ -1,12 +1,12 @@
 import React, { useCallback, useEffect, useState } from "react";
 import "react-native-gesture-handler";
+import { View } from "react-native";
 import { ThemeProvider } from "styled-components/native";
 import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
 import theme from "./src/global/styles/theme";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
 import Main from "./src/screens/Main";
-import { View } from "react-native";
 
 SplashScreen.preventAutoHideAsync();
 
