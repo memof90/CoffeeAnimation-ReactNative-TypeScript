@@ -1,25 +1,25 @@
 //import liraries
-import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, Text } from 'react-native';
+import Styles from './styles';
+import { Feather as Icon } from '@expo/vector-icons'
+
 
 // create a component
 const CardHeader = () => {
     return (
-        <View style={styles.container}>
-            <Text>CardHeader</Text>
+        <View style={Styles.container}>
+            <View style={{ flex: 1 }}>
+                <Text style={Styles.title}>
+                    RECOMMEND
+                </Text>
+                <View style={Styles.action}>
+                    <Icon name='edit' size={16} />
+                </View>
+            </View>
         </View>
     );
 };
-
-// define your styles
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#2c3e50',
-    },
-});
 
 //make this component available to the app
 export default CardHeader;
