@@ -1,12 +1,13 @@
 //import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
+import CardHeader from './component/CardHeader';
 
 // create a component
 const Main = () => {
     return (
         <View style={styles.container}>
-            
+            <CardHeader />
         </View>
     );
 };

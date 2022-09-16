@@ -2,7 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import "react-native-gesture-handler";
 import { View } from "react-native";
 import { ThemeProvider } from "styled-components/native";
-import { Nunito_400Regular, Nunito_700Bold } from "@expo-google-fonts/nunito";
+import { Nunito_400Regular, Nunito_700Bold, Nunito_500Medium } from "@expo-google-fonts/nunito";
 import theme from "./src/global/styles/theme";
 import * as SplashScreen from "expo-splash-screen";
 import * as Font from "expo-font";
@@ -19,6 +19,7 @@ export default function App() {
         await Font.loadAsync({
           Nunito_400Regular,
           Nunito_700Bold,
+          Nunito_500Medium
         });
       } catch (error) {
         console.warn(error);
