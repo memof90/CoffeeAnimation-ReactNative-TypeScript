@@ -1,25 +1,26 @@
-//import liraries
 import React, { Component } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, Image } from 'react-native';
+import Styles from './styles';
+
+interface CardsProps {
+    picture: ReturnType<typeof require>;
+    caption: string;
+}
 
 // create a component
-const Card = () => {
+const Card = ( { picture, caption }: CardsProps ) => {
     return (
-        <View style={styles.container}>
-            <Text>Card</Text>
-        </View>
+        <>
+            <View style={Styles.container}>
+                <Image source={picture} style={Styles.image} />
+            </View>
+            <View style={Styles.caption} >
+                <Text style={Styles.text}>{caption}</Text>
+            </View>
+        </>
     );
 };
 
-// define your styles
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#2c3e50',
-    },
-});
 
 //make this component available to the app
 export default Card;
